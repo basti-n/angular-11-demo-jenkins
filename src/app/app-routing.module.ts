@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ModalComponent } from './components/modal';
 
 const routes: Routes = [{
   path: 'modal',
   outlet: 'modal',
-  component: ModalComponent
+  loadChildren: () => import('./components/modal/modal.module').then(m => m.ModalModule)
 }];
 
 @NgModule({
