@@ -299,7 +299,7 @@
 </style>
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<div class="toolbar" role="banner" [routerLink]="[{outlets: {modal: ['modal']}}]">
   <img
     width="40"
     alt="Angular Logo"
@@ -532,3 +532,4 @@
 
 
 <router-outlet></router-outlet>
+<router-outlet name="modal"></router-outlet>
