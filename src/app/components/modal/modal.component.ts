@@ -5,12 +5,16 @@ import { Router } from '@angular/router';
   selector: 'app-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ModalComponent {
-  constructor(private router: Router) { }
+  constructor(private router: Router) {}
 
   public close(): void {
-    this.router.navigate([{outlets: { modal: null }}]);
+    this.router.navigate([{ outlets: { modal: null } }]);
+  }
+
+  onSelection(event: unknown): void {
+    console.log('Tab Container Changed', event);
   }
 }

@@ -1,3 +1,20 @@
 <h1>Awesome Job Mate!</h1>
 <p>Angular 11 rocks... doesn't it?</p>
 <button (click)="close()">Close Message</button>
+
+<tab-container (tab-container-change)="onSelection($event)">
+  <div role="tablist">
+    <button type="button" role="tab" aria-selected="true">Tab one</button>
+    <button type="button" role="tab" tabindex="-1">Tab two</button>
+    <button type="button" role="tab" tabindex="-1">Tab three</button>
+  </div>
+  <div role="tabpanel">
+    Panel <b>1</b>
+  </div>
+  <div role="tabpanel" hidden>
+    Panel <b>2</b>
+  </div>
+  <div role="tabpanel" hidden>
+    Panel <b>3</b>
+  </div>
+</tab-container>

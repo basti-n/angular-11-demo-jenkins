@@ -1,0 +1,11 @@
+<h1 (click)="isLoading = !isLoading">Info Page</h1>
+<p *ngIf="!isLoading; else loading">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptate,
+  officiis laboriosam quam asperiores placeat voluptas dicta ullam
+  necessitatibus assumenda. Labore inventore aliquam mollitia vitae impedit
+  eveniet nulla odio veniam.
+</p>
+
+<ng-template #loading>
+  <p>...loading...</p>
+</ng-template>

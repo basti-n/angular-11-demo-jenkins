@@ -1,0 +1,13 @@
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.35s linear;
+
+  &:hover {
+    background: lightcoral;
+  }
+}
+
+p {
+  font-weight: lighter;
+}
