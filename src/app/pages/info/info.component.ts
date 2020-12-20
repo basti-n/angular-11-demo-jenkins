@@ -4,14 +4,12 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-info',
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.scss'],
-  providers: [{ provide: Window, useValue: window }],
 })
 export class InfoComponent implements OnInit {
   isLoading = false;
 
-  constructor(private readonly window: Window) {}
+  constructor() {}
 
   ngOnInit(): void {
-    // window.addEventListener('unload', function () {});
   }
 }

@@ -13,7 +13,7 @@ describe('AddQueryParamGuard', () => {
     guard = TestBed.inject(AddQueryParamGuard);
   });
 
-  it('should be created', () => {
+  test('is created', () => {
     expect(guard).toBeTruthy();
   });
 });

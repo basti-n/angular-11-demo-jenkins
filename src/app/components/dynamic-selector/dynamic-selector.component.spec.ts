@@ -19,7 +19,7 @@ describe('DynamicSelectorComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('is created', () => {
     expect(component).toBeTruthy();
   });
 });
